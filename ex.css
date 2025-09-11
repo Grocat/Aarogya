@@ -1,0 +1,213 @@
+.interior_designers_new_main {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 50px;
+}
+ .hidden {
+      display: none;
+    }
+
+    .read-more-link {
+      background-color: #007bff;
+      text-decoration: none;
+      padding: 8px 12px;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+    .cluom:hover p {
+    display: block !important;
+    color: #000;
+}
+
+    a.read-more-btn {
+      color: #fff !important;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+.interior_designers_new_conent h2 {
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 0px;
+    font-family: 'Poppins';
+    margin-bottom: 15px;
+}
+section.conclusion-sec h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+ section.testimonials.grid.section-padding {
+    float: left;
+    width: 100%;
+}
+section.faq-seomain {
+    padding: 80px 0;
+}
+.interior_designers_new_conent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faq-singular .faq-question {
+    font-size: 20px;
+}
+section.faq-seomain h2 {
+    font-family: 'Poppins';
+}
+a.btn-curve.btn-bord.btn-lit {
+    background: #aeabab;
+    border: 1px solid #aeabab;
+}
+.interior_designers_new_btn a {
+    background: #C8C8C8;
+    padding: 10px 30px;
+    font-family: 'Poppins';
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.interior_designers_new_conent p {
+    color: #888;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    margin: 10px 0;
+}
+section.interior_designers_new {
+    padding: 70px 0;
+
+}
+.seoservice-main {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.benefits_hiring_section a.btn-curve.btn-bord.btn-lit {
+    border-color: #aeabab;
+    color: #000;
+    margin: 10px 0;
+    background: #aeabab;
+}
+section.benefits_hiring_section {
+    padding: 50px 0;
+}
+section.conclusion-sec {
+    background: #fff;
+}
+section.reasons_choose {
+    padding: 50px 30px;
+}
+.reasons_choose_main {
+    display: flex;
+    gap: 20px;
+}
+.reasons_choose_main_1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.reasons_choose_sub {
+    width: 33.3%;
+    text-align: center;
+    padding: 20px 10px;
+    background: #C2B782;
+}
+.reasons_choose .btn-curve.btn-lit {
+    border-color: #000;
+    color: #000;
+}
+.reasons_choose_sub img {
+    width: 75px;
+    height: 75px;
+}
+.reasons_choose_sub h4 {
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+}
+.reasons_choose_sub p {
+    font-size: 16px;
+    color: #fff;
+}
+.benefits_hiring_section_div_main {
+    display: grid
+;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+.benefits_hiring_section_sub-1 {
+    text-align: center;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px 0;
+    padding: 20px;
+}
+.benefits_hiring_section_sub-1 img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+}
+.benefits_hiring_section_sub-1 h4 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1200px) {
+    .interior_designers_new_conent h2 { font-size: 28px; margin-bottom: 10px;}
+    .interior_designers_new_conent p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .interior_designers_new_main {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .reasons_choose .seoservice-main {
+        display: block;
+    }
+    .reasons_choose .service-title {
+        margin-bottom: 20px;
+    }
+    .benefits_hiring_section .service-title {
+        margin-bottom: 20px;
+    }
+    .reasons_choose_main {
+        display: block;
+    }
+    .reasons_choose_main_1 {
+        display: block;
+    }
+    .reasons_choose_sub {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .benefits_hiring_section .seoservice-main {
+        display: block;
+        margin: 10px 0;
+    }
+    .benefits_hiring_section_div_main {
+        grid-template-columns: 2fr;
+    }
+    section.interior_designers_new {
+        padding: 50px 0;
+    
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .interior_designers_new_conent h2 {
+        font-size: 20px;
+    }
+    .reasons_choose_main_1 {
+        display: block;
+    }
+}
