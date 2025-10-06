@@ -317,3 +317,16 @@ $(document).ready(function(){
       }
     });
   });
+  const elements = document.querySelectorAll('.our_approach_section .our_approach_main_div, .our_approach_section .our_approach_sub, .our_approach_section h2, .our_approach_section p');
+
+function animateOnScroll() {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100) {
+            el.classList.add('animate');
+        }
+    });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
