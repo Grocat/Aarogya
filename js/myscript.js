@@ -312,7 +312,7 @@ $(document).ready(function(){
       autoplayHoverPause: true,
       responsive: {
         0: { items: 1 },      // Mobile: 1 item
-        600: { items: 2 },    // Tablet: 2 items
+        800: { items: 2 },    // Tablet: 2 items
         1000: { items: 3 }    // Desktop: 4 items
       }
     });
