@@ -706,14 +706,14 @@
     margin-bottom: 20px;
   }
 
-  .testimonial-section p {
+.testimonial-section p {
     font-family: 'Poppins-Regular';
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 25px;
     color: #8C8C8C;
     margin: 10px 0;
     text-align: center;
-  }
+}
 
   /* Default item */
   .seo-testiminoal .item {
