@@ -1100,12 +1100,6 @@ ease forwards;
     margin: auto;
     text-align: left;
   }
-.new_our_approach .our_approach_sub {
-    transition: all 0.3s 
-cubic-bezier(0.4, 0, 0.2, 1);
-    animation: slideInUp 0.6s 
-ease forwards;
-}
 
   .hover_overlay_conent h5 {
     font-family: "Poppins-Semibold";
@@ -1114,6 +1108,12 @@ ease forwards;
     color: #fff;
     margin: 10px 0;
   }
+.new_our_approach .our_approach_sub:hover,
+.our_approach_main_div .our_approach_sub:hover {
+    box-shadow: 0 20px 40px rgba(0, 166, 147, 0.15);
+    border-color: #00969C;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* optional smooth hover effect */
+}
 
   .hover_overlay_conent p {
     font-family: "Poppins-regular";
