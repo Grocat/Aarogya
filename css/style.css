@@ -1224,7 +1224,15 @@
     }
 }
 
-/* Step card styling */
+slideInUp animation {
+    transform: translateY(0px);
+    opacity: 1;
+}
+element.style {
+}
+.journey-steps .step-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
 .journey-steps .step-card {
     background: white;
     border-radius: 16px;
@@ -1232,14 +1240,16 @@
     text-align: center;
     position: relative;
     border: 1px solid #e8ecef;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 0 rgba(0,0,0,0); /* initial no shadow */
+    transition: all 0.3s 
+cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     z-index: 1;
-
-    /* Animation */
     opacity: 0;
     transform: translateY(30px);
-    animation: slideInUp 0.6s ease forwards;
+    animation: slideInUp 0.6s 
+ease forwards;
+    height: 300px;
+    margin: 10px 0;
 }
 
 /* Hover effect */
@@ -1283,15 +1293,17 @@
     opacity: 0.3;
 }
 
-/* Step title */
 .journey-steps .step-title {
-    line-height: 1.4;
+    line-height: 25px;
     text-align: center;
-    font-family: 'Poppins-medium';
-    font-size: 18px;
-    font-weight: 500;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    font-weight: 400;
     color: #0B1C34;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+.journey-steps .owl-nav {
+    display: none;
 }
 
 /* Step description (optional) */
