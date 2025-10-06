@@ -318,7 +318,7 @@
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    margin-top: 20px;
+        margin: 20px 0;
   }
 
   .our_approach_main_div.our_approach_main_div-1 {
@@ -937,7 +937,7 @@
     right: -70px;
   }
 
-  .meet_sub {
+.meet_sub {
     background: #FFFFFF;
     padding: 20px;
     border: 1px solid #ccc;
@@ -947,7 +947,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+    transition: all 0.3s 
+cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInUp 0.6s 
+ease forwards;
+}
 
   .meet_sub img {
     width: 100px !important;
@@ -1096,6 +1100,12 @@
     margin: auto;
     text-align: left;
   }
+.new_our_approach .our_approach_sub {
+    transition: all 0.3s 
+cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInUp 0.6s 
+ease forwards;
+}
 
   .hover_overlay_conent h5 {
     font-family: "Poppins-Semibold";
@@ -1284,7 +1294,12 @@
     box-shadow: 0 20px 40px rgba(0, 166, 147, 0.15);
     border-color: #00969C;
   }
-
+.new_our_approach .our_approach_sub {
+    transition: all 0.3s 
+cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInUp 0.6s 
+ease forwards;
+}
   /* Step number */
   .journey-steps .step-number {
     width: 60px;
