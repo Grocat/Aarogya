@@ -572,9 +572,10 @@
     background: #0097a7;
   }
 
-  h1.conent_h-mob {
-    display: none;
-  }
+/* On desktop: show the line break */
+.desktop-break {
+  display: inline;
+}
 
   section.facilities_section {
     padding: 50px 30px;
@@ -1167,6 +1168,9 @@
 
   /* Connection line for desktop */
   @media (min-width: 768px) {
+      .desktop-break {
+    display: none;
+  }
     .journey-steps::before {
       content: '';
       position: absolute;
@@ -1345,13 +1349,9 @@
       text-align: center;
     }
 
-    h1.conent_h1 {
-      display: none;
-    }
 
-    h1.conent_h-mob {
-      display: block;
-    }
+
+    
 
     .seo-banner_video_main h1 {
       font-size: 30px;
