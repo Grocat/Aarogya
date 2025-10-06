@@ -952,6 +952,11 @@ cubic-bezier(0.4, 0, 0.2, 1);
     animation: slideInUp 0.6s 
 ease forwards;
 }
+.meet_sub:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 166, 147, 0.15);
+    border-color: #00969C;
+}
 
   .meet_sub img {
     width: 100px !important;
