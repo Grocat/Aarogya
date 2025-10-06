@@ -311,14 +311,16 @@
   .our_approach_sub img {
     width: 50px;
   }
-.our_approach_sub h3 {
+
+  .our_approach_sub h3 {
     text-align: center;
     font-family: "Poppins-Semibold";
     font-size: 18px;
     font-weight: 500;
     color: #0B1C34;
     margin: 10px 0;
-}
+  }
+
   .our_approach_sub {
     padding: 20px;
     border: 1px solid #00969C;
@@ -338,6 +340,7 @@
   .faq-section-main {
     padding: 60px 20px;
   }
+
   .faq-answer li {
     font-family: 'Poppins-regular';
     font-size: 14px;
@@ -345,7 +348,7 @@
     color: #8C8C8C;
     margin: 10px;
     list-style: disc;
-}
+  }
 
   .faq-main .sub-heading {
     font-family: 'Poppins-bold';
@@ -579,10 +582,10 @@
     background: #0097a7;
   }
 
-/* On desktop: show the line break */
-.desktop-break {
-  display: inline !important;
-}
+  /* On desktop: show the line break */
+  .desktop-break {
+    display: inline !important;
+  }
 
   section.facilities_section {
     padding: 50px 30px;
@@ -621,7 +624,7 @@
     padding: 20px;
     background: #fff;
     border-radius: 0px 0px 10px 10px;
-        height: 215px;
+    height: 215px;
   }
 
   .item-content p {
@@ -714,14 +717,14 @@
     margin-bottom: 20px;
   }
 
-.testimonial-section p {
+  .testimonial-section p {
     font-family: 'Poppins-Regular';
     font-size: 12px;
     line-height: 25px;
     color: #8C8C8C;
     margin: 10px 0;
     text-align: center;
-}
+  }
 
   /* Default item */
   .seo-testiminoal .item {
@@ -1157,7 +1160,8 @@
     margin-bottom: 20px;
     letter-spacing: -0.02em;
   }
-.subtitle {
+
+  .subtitle {
     font-family: 'Poppins-regular';
     font-size: 16px;
     line-height: 30px;
@@ -1165,102 +1169,106 @@
     margin-bottom: 10px;
     text-align: center;
     padding: 0 40px;
-}
+  }
+
   /* ===========================
    Step-by-Step Journey Styles
 =========================== */
 
-/* Section heading */
-.step_by_step_section h2 {
+  /* Section heading */
+  .step_by_step_section h2 {
     text-align: center;
     font-family: "Poppins-Semibold";
     font-size: 35px;
     font-weight: 500;
     color: #0B1C34;
     margin-bottom: 20px;
-}
+  }
 
-/* Subtitle */
-.step_by_step_section .subtitle {
+  /* Subtitle */
+  .step_by_step_section .subtitle {
     text-align: center;
     margin-bottom: 40px;
     color: #7f8c8d;
     font-size: 16px;
     line-height: 1.6;
-}
+  }
 
-/* Owl Carousel wrapper */
-.journey-steps.owl-carousel {
+  /* Owl Carousel wrapper */
+  .journey-steps.owl-carousel {
     position: relative;
     margin-top: 40px;
-}
+  }
 
-/* Hide nav if disabled */
-.journey-steps .owl-nav.disabled {
+  /* Hide nav if disabled */
+  .journey-steps .owl-nav.disabled {
     display: none;
-}
+  }
 
-/* Connection line behind cards for desktop */
-@media (min-width: 768px) {
+  /* Connection line behind cards for desktop */
+  @media (min-width: 768px) {
     .desktop-break {
-        display: none;
+      display: none;
     }
+
     .journey-steps.owl-carousel::before {
-        content: '';
-        position: absolute;
-        top: 50%; /* vertical center */
-        left: 10%;
-        right: 10%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent 0%, #00a693 15%, #00969C 85%, transparent 100%);
-        z-index: 0; /* behind cards */
-        transform: translateY(-50%);
+      content: '';
+      position: absolute;
+      top: 50%;
+      /* vertical center */
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, #00a693 15%, #00969C 85%, transparent 100%);
+      z-index: 0;
+      /* behind cards */
+      transform: translateY(-50%);
     }
 
     /* Cards above the line */
     .journey-steps .step-card {
-        position: relative;
-        z-index: 1;
+      position: relative;
+      z-index: 1;
     }
-}
+  }
 
-slideInUp animation {
+  slideInUp animation {
     transform: translateY(0px);
     opacity: 1;
-}
-element.style {
-}
-.journey-steps .step-card:nth-child(1) {
+  }
+
+  element.style {}
+
+  .journey-steps .step-card:nth-child(1) {
     animation-delay: 0.1s;
-}
-.journey-steps .step-card {
+  }
+
+  .journey-steps .step-card {
     background: white;
     border-radius: 16px;
     padding: 30px 25px;
     text-align: center;
     position: relative;
     border: 1px solid #e8ecef;
-    transition: all 0.3s 
-cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     z-index: 1;
     opacity: 0;
     transform: translateY(30px);
-    animation: slideInUp 0.6s 
-ease forwards;
-    height: 300px;
+    animation: slideInUp 0.6s ease forwards;
+    height: 250px;
     margin: 10px 0;
-}
+  }
 
-/* Hover effect */
-.journey-steps .step-card:hover {
+  /* Hover effect */
+  .journey-steps .step-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 166, 147, 0.15);
     border-color: #00969C;
-}
+  }
 
-/* Step number */
-.journey-steps .step-number {
+  /* Step number */
+  .journey-steps .step-number {
     width: 60px;
     height: 60px;
     background: linear-gradient(135deg, #00969C, #00969C);
@@ -1275,10 +1283,10 @@ ease forwards;
     margin: 0 auto 25px auto;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 166, 147, 0.3);
-}
+  }
 
-/* Step number hover glow */
-.journey-steps .step-number::after {
+  /* Step number hover glow */
+  .journey-steps .step-number::after {
     content: '';
     position: absolute;
     inset: -4px;
@@ -1287,13 +1295,13 @@ ease forwards;
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+  }
 
-.journey-steps .step-card:hover .step-number::after {
+  .journey-steps .step-card:hover .step-number::after {
     opacity: 0.3;
-}
+  }
 
-.journey-steps .step-title {
+  .journey-steps .step-title {
     line-height: 25px;
     text-align: center;
     font-family: 'Poppins-Regular';
@@ -1301,34 +1309,46 @@ ease forwards;
     font-weight: 400;
     color: #0B1C34;
     margin-bottom: 10px;
-}
-.journey-steps .owl-nav {
-    display: none;
-}
+  }
 
-/* Step description (optional) */
-.journey-steps .step-description {
+  .journey-steps .owl-nav {
+    display: none;
+  }
+
+  /* Step description (optional) */
+  .journey-steps .step-description {
     font-size: 0.95rem;
     color: #7f8c8d;
     line-height: 1.6;
-}
+  }
 
-/* Animation delays for sequential steps */
-.journey-steps .step-card:nth-child(1) { animation-delay: 0.1s; }
-.journey-steps .step-card:nth-child(2) { animation-delay: 0.2s; }
-.journey-steps .step-card:nth-child(3) { animation-delay: 0.3s; }
-.journey-steps .step-card:nth-child(4) { animation-delay: 0.4s; }
+  /* Animation delays for sequential steps */
+  .journey-steps .step-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
 
-/* Slide up animation */
-@keyframes slideInUp {
+  .journey-steps .step-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .journey-steps .step-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .journey-steps .step-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  /* Slide up animation */
+  @keyframes slideInUp {
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
+  }
 
-/* Owl Carousel navigation buttons */
-.journey-steps .owl-nav button {
+  /* Owl Carousel navigation buttons */
+  .journey-steps .owl-nav button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1338,18 +1358,23 @@ ease forwards;
     width: 40px;
     height: 40px;
     border: none;
-}
+  }
 
-.journey-steps .owl-nav button.owl-prev { left: -20px; }
-.journey-steps .owl-nav button.owl-next { right: -20px; }
+  .journey-steps .owl-nav button.owl-prev {
+    left: -20px;
+  }
 
-/* Dots */
-.journey-steps .owl-dots {
+  .journey-steps .owl-nav button.owl-next {
+    right: -20px;
+  }
+
+  /* Dots */
+  .journey-steps .owl-dots {
     text-align: center;
     margin-top: 20px;
-}
+  }
 
-.journey-steps .owl-dot span {
+  .journey-steps .owl-dot span {
     width: 12px;
     height: 12px;
     background: #e8ecef;
@@ -1357,11 +1382,11 @@ ease forwards;
     border-radius: 50%;
     margin: 5px;
     transition: background 0.3s;
-}
+  }
 
-.journey-steps .owl-dot.active span {
+  .journey-steps .owl-dot.active span {
     background: #00a693;
-}
+  }
 
 
   @media screen and (max-width:1300px) {}
@@ -1430,7 +1455,7 @@ ease forwards;
 
 
 
-    
+
 
     .seo-banner_video_main h1 {
       font-size: 30px;
@@ -1458,15 +1483,18 @@ ease forwards;
 
   @media screen and (max-width:600px) {
     section.step_by_step_section {
-    padding: 50px 10px;
-}
-.subtitle {
-    padding: 0;
-}
-.step_by_step_section h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-}
+      padding: 50px 10px;
+    }
+
+    .subtitle {
+      padding: 0;
+    }
+
+    .step_by_step_section h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
     .seo-testiminoal {
       margin-top: 30px;
     }
