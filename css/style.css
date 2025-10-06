@@ -574,7 +574,7 @@
 
 /* On desktop: show the line break */
 .desktop-break {
-  display: inline;
+  display: inline !important;
 }
 
   section.facilities_section {
@@ -1169,7 +1169,7 @@
   /* Connection line for desktop */
   @media (min-width: 768px) {
       .desktop-break {
-    display: none;
+    display: none !important;
   }
     .journey-steps::before {
       content: '';
