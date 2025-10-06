@@ -313,9 +313,11 @@ h2.sub-heading {
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr ;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
   }
-
+.our_approach_main_div.our_approach_main_div-1 {
+    grid-template-columns: 1fr 1fr;
+}
   .our_approach_sub img {
     width: 50px;
   }
