@@ -311,7 +311,7 @@ h2.sub-heading {
   .our_approach_main_div {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     text-align: center;
     margin-top: 50px;
   }
