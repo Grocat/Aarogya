@@ -331,6 +331,14 @@
   .faq-section-main {
     padding: 60px 20px;
   }
+  .faq-answer li {
+    font-family: 'Poppins-regular';
+    font-size: 14px;
+    line-height: 30px;
+    color: #8C8C8C;
+    margin: 10px;
+    list-style: disc;
+}
 
   .faq-main .sub-heading {
     font-family: 'Poppins-bold';
