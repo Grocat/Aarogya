@@ -614,6 +614,7 @@
     padding: 20px;
     background: #fff;
     border-radius: 0px 0px 10px 10px;
+        height: 215px;
   }
 
   .item-content p {
