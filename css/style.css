@@ -1159,32 +1159,36 @@
     text-align: center;
     padding: 0 40px;
 }
-  .journey-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+  /* Owl Carousel wrapper adjustments */
+.journey-steps.owl-carousel {
     position: relative;
-  }
+    margin-top: 40px;
+}
 
-  /* Connection line for desktop */
-  @media (min-width: 768px) {
-      .desktop-break {
-    display: none ;
-  }
-    .journey-steps::before {
-      content: '';
-      position: absolute;
-      top: 60px;
-      left: 10%;
-      right: 10%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent 0%, #00a693 15%, #00969C 85%, transparent 100%);
-      z-index: 1;
+/* Hide default nav if disabled */
+.journey-steps .owl-nav.disabled {
+    display: none;
+}
+
+/* Connection line for desktop */
+@media (min-width: 768px) {
+    .desktop-break {
+        display: none;
     }
-  }
+    .journey-steps.owl-carousel::before {
+        content: '';
+        position: absolute;
+        top: 60px;
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent 0%, #00a693 15%, #00969C 85%, transparent 100%);
+        z-index: 1;
+    }
+}
 
-  .step-card {
+/* Step card styling */
+.journey-steps .step-card {
     background: white;
     border-radius: 16px;
     padding: 30px 25px;
@@ -1193,15 +1197,20 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #e8ecef;
     z-index: 2;
-  }
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.6s ease forwards;
+}
 
-  .step-card:hover {
+/* Hover effect */
+.journey-steps .step-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 166, 147, 0.15);
     border-color: #00969C;
-  }
+}
 
-  .step-number {
+/* Step number */
+.journey-steps .step-number {
     width: 60px;
     height: 60px;
     background: linear-gradient(135deg, #00969C, #00969C);
@@ -1216,9 +1225,10 @@
     box-shadow: 0 8px 20px rgba(0, 166, 147, 0.3);
     font-weight: 500;
     font-family: 'Poppins-Regular';
-  }
+}
 
-  .step-number::after {
+/* Step number hover glow */
+.journey-steps .step-number::after {
     content: '';
     position: absolute;
     inset: -4px;
@@ -1227,13 +1237,14 @@
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
+}
 
-  .step-card:hover .step-number::after {
+.journey-steps .step-card:hover .step-number::after {
     opacity: 0.3;
-  }
+}
 
-.step-title {
+/* Step title */
+.journey-steps .step-title {
     line-height: 1.4;
     text-align: center;
     font-family: 'Poppins-medium';
@@ -1242,42 +1253,29 @@
     color: #0B1C34;
     margin-bottom: 15px;
 }
-  .step-description {
+
+/* Step description */
+.journey-steps .step-description {
     font-size: 0.95rem;
     color: #7f8c8d;
     line-height: 1.6;
-  }
+}
 
+/* Animation delay for steps */
+.journey-steps .step-card:nth-child(1) { animation-delay: 0.1s; }
+.journey-steps .step-card:nth-child(2) { animation-delay: 0.2s; }
+.journey-steps .step-card:nth-child(3) { animation-delay: 0.3s; }
+.journey-steps .step-card:nth-child(4) { animation-delay: 0.4s; }
 
-  /* Animation for cards */
-  .step-card {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: slideInUp 0.6s ease forwards;
-  }
-
-  .step-card:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .step-card:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .step-card:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  .step-card:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-
-  @keyframes slideInUp {
+/* Slide up animation */
+@keyframes slideInUp {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
+/* Section heading */
 .step_by_step_section h2 {
     text-align: center;
     font-family: "Poppins-Semibold";
@@ -1286,6 +1284,23 @@
     color: #0B1C34;
     margin-bottom: 20px;
 }
+
+/* Owl nav buttons styling (optional) */
+.journey-steps .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00a693;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.journey-steps .owl-nav button.owl-prev { left: -20px; }
+.journey-steps .owl-nav button.owl-next { right: -20px; }
+
   @media screen and (max-width:1300px) {}
 
   @media screen and (max-width:1200px) {
