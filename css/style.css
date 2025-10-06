@@ -1114,6 +1114,14 @@ ease forwards;
     border-color: #00969C;
     transition: box-shadow 0.3s ease, border-color 0.3s ease; /* optional smooth hover effect */
 }
+.our_approach_sub h4 {
+    text-align: center;
+    font-family: "Poppins-Semibold";
+    font-size: 20px;
+    font-weight: 500;
+    color: #0B1C34;
+    margin: 15px 0;
+}
 
   .hover_overlay_conent p {
     font-family: "Poppins-regular";
