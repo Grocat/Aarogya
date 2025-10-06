@@ -293,8 +293,8 @@
 
   .our_approach_section p {
     font-family: 'Poppins-regular';
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 25px;
     color: #000;
     margin-bottom: 10px;
     text-align: center;
@@ -311,7 +311,14 @@
   .our_approach_sub img {
     width: 50px;
   }
-
+.our_approach_sub h3 {
+    text-align: center;
+    font-family: "Poppins-Semibold";
+    font-size: 18px;
+    font-weight: 500;
+    color: #0B1C34;
+    margin: 10px 0;
+}
   .our_approach_sub {
     padding: 20px;
     border: 1px solid #00969C;
@@ -1159,18 +1166,41 @@
     text-align: center;
     padding: 0 40px;
 }
-  /* Owl Carousel wrapper adjustments */
+  /* ===========================
+   Step-by-Step Journey Styles
+=========================== */
+
+/* Section heading */
+.step_by_step_section h2 {
+    text-align: center;
+    font-family: "Poppins-Semibold";
+    font-size: 35px;
+    font-weight: 500;
+    color: #0B1C34;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.step_by_step_section .subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Owl Carousel wrapper */
 .journey-steps.owl-carousel {
     position: relative;
     margin-top: 40px;
 }
 
-/* Hide default nav if disabled */
+/* Hide nav if disabled */
 .journey-steps .owl-nav.disabled {
     display: none;
 }
 
-/* Connection line for desktop */
+/* Connection line behind cards for desktop */
 @media (min-width: 768px) {
     .desktop-break {
         display: none;
@@ -1178,11 +1208,18 @@
     .journey-steps.owl-carousel::before {
         content: '';
         position: absolute;
-        top: 60px;
+        top: 50%; /* vertical center */
         left: 10%;
         right: 10%;
         height: 2px;
         background: linear-gradient(90deg, transparent 0%, #00a693 15%, #00969C 85%, transparent 100%);
+        z-index: 0; /* behind cards */
+        transform: translateY(-50%);
+    }
+
+    /* Cards above the line */
+    .journey-steps .step-card {
+        position: relative;
         z-index: 1;
     }
 }
@@ -1194,9 +1231,12 @@
     padding: 30px 25px;
     text-align: center;
     position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #e8ecef;
-    z-index: 2;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* initial no shadow */
+    z-index: 1;
+
+    /* Animation */
     opacity: 0;
     transform: translateY(30px);
     animation: slideInUp 0.6s ease forwards;
@@ -1220,11 +1260,11 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins-Regular';
     margin: 0 auto 25px auto;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 166, 147, 0.3);
-    font-weight: 500;
-    font-family: 'Poppins-Regular';
 }
 
 /* Step number hover glow */
@@ -1254,14 +1294,14 @@
     margin-bottom: 15px;
 }
 
-/* Step description */
+/* Step description (optional) */
 .journey-steps .step-description {
     font-size: 0.95rem;
     color: #7f8c8d;
     line-height: 1.6;
 }
 
-/* Animation delay for steps */
+/* Animation delays for sequential steps */
 .journey-steps .step-card:nth-child(1) { animation-delay: 0.1s; }
 .journey-steps .step-card:nth-child(2) { animation-delay: 0.2s; }
 .journey-steps .step-card:nth-child(3) { animation-delay: 0.3s; }
@@ -1275,17 +1315,7 @@
     }
 }
 
-/* Section heading */
-.step_by_step_section h2 {
-    text-align: center;
-    font-family: "Poppins-Semibold";
-    font-size: 35px;
-    font-weight: 500;
-    color: #0B1C34;
-    margin-bottom: 20px;
-}
-
-/* Owl nav buttons styling (optional) */
+/* Owl Carousel navigation buttons */
 .journey-steps .owl-nav button {
     position: absolute;
     top: 50%;
@@ -1300,6 +1330,27 @@
 
 .journey-steps .owl-nav button.owl-prev { left: -20px; }
 .journey-steps .owl-nav button.owl-next { right: -20px; }
+
+/* Dots */
+.journey-steps .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.journey-steps .owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #e8ecef;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.journey-steps .owl-dot.active span {
+    background: #00a693;
+}
+
 
   @media screen and (max-width:1300px) {}
 
