@@ -301,3 +301,19 @@ $(document).ready(function(){
     }
   });
 });
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },      // Mobile: 1 item
+        600: { items: 2 },    // Tablet: 2 items
+        1000: { items: 4 }    // Desktop: 4 items
+      }
+    });
+  });
